@@ -2,8 +2,8 @@ class Solution {
     public int waysToSplitArray(int[] nums) {
         int n=nums.length;
         int count=0;
-        int prefix[]=new int[n];
-        int suffix[]=new int[n];
+        long prefix[]=new long[n];
+        long suffix[]=new long[n];
         prefix[0]=nums[0];
         suffix[0]=nums[n-1];
         for(int i=1;i<n;i++){
